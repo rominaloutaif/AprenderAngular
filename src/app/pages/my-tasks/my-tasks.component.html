@@ -1,0 +1,5 @@
+<app-add-task (newTask)="onNewTask($event)"></app-add-task>
+<app-tasks-list [taskList]="myTasks"></app-tasks-list>
+<alert type="success" *ngIf="lastTaskAdded">
+     La tarea <strong>{{lastTaskAdded}}</strong> fue creada exitosamente
+  </alert>
